@@ -19,7 +19,7 @@ while principal > 0:
     principal = principal * (1+rate/12) - payment - extra
     total_paid = total_paid + payment + extra
     if principal <0: principal = 0
-    print(str(month)+' '+ str(total_paid )+' '+str( principal))
+    print(f'{month} {total_paid:.2f} {principal:.2f}')
 
 print('Total paid', total_paid)
 print('Months:', month)
